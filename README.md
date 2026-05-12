@@ -1,32 +1,38 @@
-# Mistral App Template
+# Elements — The Story of Matter Across Cosmic Time
 
-This folder is the reusable starting point for all Mistral app projects.
+*From the first hydrogen atom to gold in neutron-star collisions.*
 
-## What This Template Contains
+A timeline-native education app that visualises when and where elements formed during cosmic history. Instead of a static reference grid, Elements presents the periodic table as a cosmic story — mapping each element to the era and event that created it.
 
-- `config.json`: GitHub organization and metadata configuration.
-- `GooglePlay Release Pipe/`: automation assets for Google Play listing updates.
-- `Requirements/`: project requirement templates and technical design patterns used by agents.
-- `Requirements/app_icon/`: placeholder folder for app icon source assets.
+## Concept
 
-## Initialization Workflow
+Most periodic table apps teach facts but not origin. Elements solves this with a horizontal cosmic timeline spanning four eras:
 
-1. Run `init.py` with destination folder and project name.
-2. The script copies this template into `<destination>/<project_name>`.
-3. Optionally pass an initial research markdown file.
-4. If provided, the file is copied into the generated project as `Requirements/Initial Research.md`.
+1. **Big Bang nucleosynthesis** — H, He, trace Li
+2. **Stellar forging** — fusion pathways in first-generation stars
+3. **Supernova nucleosynthesis** — heavier elements scattered across galaxies
+4. **Neutron-star mergers / r-process** — gold, platinum, and other heavy nuclei
 
-## Configuration
+Tapping any element opens a full visual card showing its atomic data, electron shell model, physical state, and natural origin pathway — rendered with a material-language visual system that gives each element class its own look (flowing gas fields, reflective crystalline metals, fluid shaders for liquids, decay motifs for radioactives).
 
-All derived apps are configured to push to the **Tised-Gabilin** GitHub organization:
+## Target Platforms
 
-- Organization URL: https://github.com/orgs/Tised-Gabilin/repositories
-- Configuration details are stored in `config.json`
-- Each derived app inherits this configuration automatically during initialization
+- iOS (primary) — SwiftUI + SceneKit / RealityKit
+- Android — planned follow-on release
 
-## Agent Notes
+## Revenue Model
 
-- `config.json` provides GitHub organization and project metadata.
-- `Requirements/Purchase.md` is a permanent technical implementation template.
-- `Requirements/app_icon/` is created for every initialized app and should hold icon working files.
-- `Requirements/Initial Research.md` is app-specific input and can be added later by the operator if omitted during initialization.
+- **Free:** first 7 elements + first timeline era
+- **Paid unlock:** $10 one-time for the full 118-element experience
+
+## Repository Structure
+
+```
+Requirements/              # Product research, purchase patterns, and app icon assets
+GooglePlay Release Pipe/   # Automation scripts and metadata for Google Play listing updates
+config.json                # GitHub organisation and project metadata
+```
+
+## Links
+
+- GitHub organisation: [Tised-Gabilin](https://github.com/orgs/Tised-Gabilin/repositories)
